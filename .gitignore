@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+*.swp
+*.swo
+
+# Backup/temp files
+*.backup
+*.bak
+*.test
+*.tmp
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Secrets (should never be here, but just in case)
+**/api_key
+**/credentials*
+**/secret*
+*.pem
+*.key

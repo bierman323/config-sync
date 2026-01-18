@@ -1,0 +1,6 @@
+---
+
+
+
+# has to be the last line in the file
+command: ["/home/vscode/startup.sh"]
