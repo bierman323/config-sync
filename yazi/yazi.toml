@@ -120,6 +120,8 @@ preloaders = [
 ]
 previewers = [
 	{ name = "*/", run = "folder" },
+	# Markdown
+	{ name = "*.md", run = "glow" },
 	# Code
 	{ mime = "text/*", run = "code" },
 	{ mime = "application/{mbox,javascript,wine-extension-ini}", run = "code" },
