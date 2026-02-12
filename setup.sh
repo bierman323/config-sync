@@ -11,7 +11,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}"
 
 # Tools to sync (tool:command pairs)
-TOOLS="btop:btop yazi:yazi powerline:powerline-daemon git:git devcontainer:devcontainer"
+TOOLS="btop:btop yazi:yazi powerline:powerline-daemon git:git glow:glow devcontainer:devcontainer"
 
 # Detect OS and distribution
 detect_platform() {
@@ -67,6 +67,14 @@ get_config_path() {
             ;;
         git)
             echo "$CONFIG_DIR/git"
+            ;;
+        glow)
+            # macOS glow uses ~/Library/Preferences/glow
+            if [ "$PLATFORM" = "macos" ]; then
+                echo "$HOME/Library/Preferences/glow"
+            else
+                echo "$CONFIG_DIR/glow"
+            fi
             ;;
         devcontainer)
             echo "$CONFIG_DIR/devcontainer"

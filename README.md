@@ -18,6 +18,7 @@ Replace `USERNAME` with your GitHub username.
 | [btop](https://github.com/aristocratos/btop) | Resource monitor | `btop.conf` |
 | [powerline](https://github.com/powerline/powerline) | Statusline plugin | themes, colorschemes |
 | [git](https://git-scm.com/) | Global gitignore | `ignore` |
+| [glow](https://github.com/charmbracelet/glow) | Terminal markdown renderer | `glow.yml` |
 | [devcontainer](https://containers.dev/) | VS Code devcontainer overrides | `docker-compose.override.yml` |
 
 ## Supported Platforms
@@ -57,6 +58,7 @@ ln -sf ~/.config-sync/btop ~/.config/btop
 ln -sf ~/.config-sync/yazi ~/.config/yazi
 ln -sf ~/.config-sync/powerline ~/.config/powerline
 ln -sf ~/.config-sync/git ~/.config/git
+ln -sf ~/.config-sync/glow ~/Library/Preferences/glow  # macOS; use ~/.config/glow on Linux
 ln -sf ~/.config-sync/devcontainer ~/.config/devcontainer
 
 # Configure git to use the global ignore file
